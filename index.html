@@ -17,7 +17,7 @@
         <meta content="#36393f" data-react-helmet="true" name="theme-color" />
         <meta property="twitter:card" content="summary_large_image"/>
         <link href="https://fonts.googleapis.com/css?family=Assistant:200,200italic,400,400italic" rel="stylesheet" type="text/css"/>
-        <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+        <link id="icon-a" rel="shortcut icon" type="image/png" href="https://cdn.discordapp.com/attachments/853068101016748042/861821494661087282/7b593f7f4857b8298d9801f096018aeb.jpg" />
         <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png?v=fa33007e"/>
         <style>
             html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
@@ -1507,7 +1507,25 @@
             }
             )();
         </script>
-        <body oncontextmenu="return false;"></body>
+        <body oncontextmenu="return false;">
+        
+         
+     <script>
+        // Store your current icon
+        var current = 0;
+        var icons = ['https://cdn.discordapp.com/attachments/853068101016748042/861821531071184937/128a0f83db65cb93230525bbeb130e4a.jpg', 'https://cdn.discordapp.com/attachments/853068101016748042/861821539616161842/02228f8c3b559617b4eabc03b1508044.jpg', 'https://cdn.discordapp.com/attachments/853068101016748042/861821557969387530/black_knee_socks__thigh_high_s_1607998160_6d9a8d5b_progressive.jpg', 'https://cdn.discordapp.com/attachments/853068101016748042/861821581734182942/d37c33b2921a5df2fc85040e32b28f6c.jpg', 'https://cdn.discordapp.com/attachments/853068101016748042/861821633085308948/f58aacd2cddf1a32e2701ba767184f3c.jpg', 'https://cdn.discordapp.com/attachments/853068101016748042/861821494661087282/7b593f7f4857b8298d9801f096018aeb.jpg'];
+        // Every 2 seconds, switch your icon
+        setInterval(function () {
+            // Determine the next icon
+            var icon = (++current % icons.length);
+            // Grab the URL to use
+            var url = icons[icon];
+            // Update your elements
+            document.getElementById('icon-a').href = url;
+        }, 1500);
+    </script>
+        
+        </body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
         <script type="text/javascript" src="assets/javascript/app.js"></script>
