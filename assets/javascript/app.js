@@ -5,4 +5,3 @@ document.onclick = function() {
   audio.play();
 }
 
-// chrome autoplay moment no work 
