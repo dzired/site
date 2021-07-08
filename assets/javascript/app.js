@@ -4,3 +4,5 @@ var audio = new Audio("audio.mp3");
 document.onclick = function() {
   audio.play();
 }
+
+// chrome autoplay moment no work 
