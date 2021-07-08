@@ -42,5 +42,6 @@ class _app {
     }, delay);
   };
 }
+}
 
 const app = new _app();
