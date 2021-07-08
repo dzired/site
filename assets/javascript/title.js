@@ -1,7 +1,6 @@
 var i=0;
 setInterval(function(){
     var titles=[
-"||",
 "|m|",
 "|me|",
 "|meh|",
