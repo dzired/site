@@ -6,4 +6,4 @@ setInterval(function(){
     }
     document.title = titles[i];
     i++;
-}, 500);
+}, 300);
