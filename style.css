@@ -1,0 +1,352 @@
+@font-face {
+	font-family: "Brandon Light";
+	src: url("font.woff2");
+}
+
+:root {
+    --color: red;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow: hidden;
+	font-family: "Brandon Light";
+	color: white;
+	user-select: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	padding: 0;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#border {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	pointer-events: none;
+	z-index: -1;
+}
+
+
+#borderTop, #borderBottom {
+	position: absolute;
+	width: 0%;
+	height: 4px;
+	background-color: purple;
+}
+
+#borderRight, #borderLeft {
+	position: absolute;
+	width: 3px;
+	height: 0%;
+	background-color: purple;
+}
+
+video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -2;
+	filter: blur(5px) brightness(20%);
+	pointer-events: none;
+}
+
+#clickToPlay {
+	opacity: 0;
+	transition: 1s;
+	position: absolute;
+	color: white;
+	font-size: 64px;
+	cursor: default;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+#main {
+	opacity: 0;
+	transition: 5s;
+}
+
+
+
+
+
+@keyframes rainbow-text {
+  0% {
+    color: #e87d7d;
+  }
+  2% {
+    color: #e88a7d;
+  }
+  4% {
+    color: #e8977d;
+  }
+  6% {
+    color: #e8a47d;
+  }
+  8% {
+    color: #e8b07d;
+  }
+  10% {
+    color: #e8bd7d;
+  }
+  12% {
+    color: #e8ca7d;
+  }
+  14% {
+    color: #e8d77d;
+  }
+  16% {
+    color: #e8e47d;
+  }
+  18% {
+    color: #dfe87d;
+  }
+  20% {
+    color: #d3e87d;
+  }
+  22% {
+    color: #c6e87d;
+  }
+  24% {
+    color: #b9e87d;
+  }
+  26% {
+    color: #ace87d;
+  }
+  28% {
+    color: #9fe87d;
+  }
+  30% {
+    color: #92e87d;
+  }
+  32% {
+    color: #86e87d;
+  }
+  34% {
+    color: #7de881;
+  }
+  36% {
+    color: #7de88e;
+  }
+  38% {
+    color: #7de89b;
+  }
+  40% {
+    color: #7de8a8;
+  }
+  42% {
+    color: #7de8b5;
+  }
+  44% {
+    color: #7de8c1;
+  }
+  46% {
+    color: #7de8ce;
+  }
+  48% {
+    color: #7de8db;
+  }
+  50% {
+    color: #7de8e8;
+  }
+  52% {
+    color: #7ddbe8;
+  }
+  54% {
+    color: #7dcee8;
+  }
+  56% {
+    color: #7dc1e8;
+  }
+  58% {
+    color: #7db5e8;
+  }
+  60% {
+    color: #7da8e8;
+  }
+  62% {
+    color: #7d9be8;
+  }
+  64% {
+    color: #7d8ee8;
+  }
+  66% {
+    color: #7d81e8;
+  }
+  68% {
+    color: #867de8;
+  }
+  70% {
+    color: #927de8;
+  }
+  72% {
+    color: #9f7de8;
+  }
+  74% {
+    color: #ac7de8;
+  }
+  76% {
+    color: #b97de8;
+  }
+  78% {
+    color: #c67de8;
+  }
+  80% {
+    color: #d37de8;
+  }
+  82% {
+    color: #df7de8;
+  }
+  84% {
+    color: #e87de4;
+  }
+  86% {
+    color: #e87dd7;
+  }
+  88% {
+    color: #e87dca;
+  }
+  90% {
+    color: #e87dbd;
+  }
+  92% {
+    color: #e87db0;
+  }
+  94% {
+    color: #e87da4;
+  }
+  96% {
+    color: #e87d97;
+  }
+  98% {
+    color: #e87d8a;
+  }
+  100% {
+    color: #e87d7d;
+  }
+}
+.rainbow-text {
+  animation: rainbow-text 3s infinite;
+}
+
+
+
+
+
+@keyframes slide {
+	0% {
+		background-position-x: 0%;
+	}
+	100% {
+		background-position-x: 60vw;
+	}
+}
+
+#widgetContainer {
+	opacity: 0;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 400px;
+	height: 38px;
+	background: repeating-linear-gradient(120deg, slategrey 5%, blanchedalmond 70%);
+	background-size: 60vw 60vw;
+	animation: slide 1s linear infinite forwards;
+	transition: 1s;
+}
+
+ #widget {
+	position: absolute;
+	width: 394px;
+	height: 29px;
+	margin: 3px;
+	background-color: purple;
+	z-index: 1;
+	transition: 2s;
+	
+}
+
+#widgetMain {
+	position: absolute;
+	display: inline-flex;
+	justify-content: space-between;
+	margin-top: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 374px;
+	height: 29px;
+	z-index: 2;
+	background-color: purple;
+}
+
+#burgerMenu {
+	cursor: pointer;
+}
+
+#dropDownContent {
+	display: none;
+	opacity: 0;
+	transition: 2s;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin-top: 30px;
+}
+
+#links {
+	right: 5px;
+	width: 100px;
+	float: left;
+	margin-top: -4px;
+}
+
+#groups {
+	float: right;
+	margin-top: 5px;
+}
+
+#dropDownContent div a {
+	opacity: 0;
+	transition: 1s;
+	line-height: 18px;
+}
+
+#dropDownContent div span {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#groups a, #groups span {
+	float: right;
+}
+
+.hitCount {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	transition: 3s;
+	color: var(--color);
+	font-size: 24px;
+	opacity: 0;
+	bottom: -3px;
+}
+
+a.hitCounter.badge-done0 {
+	display: none!important;
+}
