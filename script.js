@@ -1,6 +1,6 @@
 
 //Video volume
-document.getElementById("vid").volume = 0.3;
+document.getElementById("vid").volume = 0.18;
 
 
 //Main Function
