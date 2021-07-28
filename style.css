@@ -18,6 +18,7 @@ body {
 }
 
 a {
+	
 	color: white;
 	text-decoration: none;
 	padding: 0;
@@ -79,6 +80,7 @@ video {
 }
 
 #main {
+	
 	opacity: 0;
 	transition: 5s;
 }
@@ -271,6 +273,11 @@ video {
 	animation: slide 1s linear infinite forwards;
 	transition: 1s;
 }
+
+
+
+
+
 
  #widget {
 	position: absolute;
