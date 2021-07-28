@@ -16,7 +16,10 @@
 
 
 div.brandon { 
-    font-family: Brandon Light;
+	text-decoration: none;
+	padding: 0;
+	font-family: "Brandon Light";
+
 }
 
 
