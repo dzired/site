@@ -5,6 +5,7 @@
 <meta content="hmu with some feedback! <3" property="og:description">
 <meta content="mehf.club > all" property="og:site_name">
 <meta content='https://cdn.discordapp.com/attachments/851854525299294238/869618721902182430/2dbec37a5b53f63456ed3d09ec31ddad.jpg' property='og:image'>
+	    	<link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <title>   </title>
     <link rel="stylesheet" href="style.css">
@@ -70,6 +71,31 @@ setTimeout(clock, 1000)
 	</div>
     </div>
     <video autoplay loop id="vid">
+	    	<script src="canvas-video-player.js"></script>
+	    	<script>
+	
+	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+	
+	if (isIOS) {
+ 
+		var canvasVideo = new CanvasVideoPlayer({
+			videoSelector: '.video',
+			canvasSelector: '.canvas',
+			timelineSelector: false,
+			autoplay: true,
+			makeLoop: true,
+			pauseOnClick: false,
+			audio: false
+		});
+		
+	}else {
+		
+		// Use HTML5 video
+		document.querySelectorAll('.canvas')[0].style.display = 'none';
+		
+	}	
+	
+	</script>
 	    
     <source src="vid.mp4" type="video/mp4" poster="https://cdn.discordapp.com/attachments/827730729010069535/869771822005112872/2dbec37a5b53f63456ed3d09ec31ddad.jpg">
     </video>
