@@ -21,8 +21,7 @@ var getSetLastFM = function() {
     dataType: "json",
     success: function(resp) {
       var recentTrack = resp.recenttracks.track[0];
-      var formatted =
-        "<img src='https://i.imgur.com/EgWjJry.png'>" + recentTrack.name;
+      var formatted = recentTrack.name;
       $("a#tracktitle")
         .html(formatted)
         .attr("href", recentTrack.url)
@@ -30,7 +29,6 @@ var getSetLastFM = function() {
         .attr("target", "_blank");
 
       var artistFormatted =
-        "<img src='https://i.imgur.com/fae5XZA.png'>" +
         recentTrack.artist["#text"];
       $("a#trackartist")
         .html(artistFormatted)
