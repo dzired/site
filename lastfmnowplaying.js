@@ -1,7 +1,3 @@
-/**
-  Developed by Prashant Shrestha
-  + https://prashant.me
-*/
 
 var lastfmData = {
   baseURL:
