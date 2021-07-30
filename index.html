@@ -1,7 +1,8 @@
- <html>
+ <html lang="en">
     <head>
       <title>   </title>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta property="og:title" content="Outside the sun is shining" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="seems like heaven ain't far away" />
@@ -19,12 +20,8 @@
     <title>   </title>
     <link rel="stylesheet" href="style.css">
 
-    <body>
-	
-	
-	<head>
 
-<script language="javascript" type="text/javascript">
+<script type="text/javascript">
 function clock() {
 var date = new Date()
 
@@ -41,24 +38,19 @@ setTimeout(clock, 1000)
 }
 </script>
 </head>
+    
+
+<body onLoad="clock()" oncontextmenu="return false;">
 
 
+<div id="clickToPlay">
+    <span class="center">click</span>
+</div>
 
-<!-- STEP TWO: Insert the onLoad event handler into your BODY tag  -->
+<div id="main" class="center">
 
-<body onLoad="clock()">
-	
-		        <body oncontextmenu="return false;">
-
-      <div id="clickToPlay">
-	
-        <span class="center">click</span> 
-      </div>
-    <div id="main">
-    <div class="center"> 	  
-	    <div class="rainbow-text">
+    <div class="rainbow-text">
         <pre>
-
                 _      __ 
                | |    / _|
  _ __ ___   ___| |__ | |_ 
@@ -66,18 +58,37 @@ setTimeout(clock, 1000)
 | | | | | |  __/ | | | |  
 |_| |_| |_|\___|_| |_|_|  
 
-
-<div class = "brandon"><a>I am currently listening to <a id="tracktitle"></a><a> by </a><a href="#" id="trackartist"></a><a> on spotify!</a> </div> 	
-
-<div class = "brandon"><a href="https://open.spotify.com/user/3htcy4th0fy2bjto9f5nepe85">spotify</a> ⠀• ⠀<a href="https://discord.gg/sPgtbM8kFU">discord</a>⠀ • ⠀<a href="https://twitter.com/mehfxd">twitter</a>⠀ • ⠀<a href="https://twitch.tv/mehfxd">twitch</a>⠀ • ⠀<a href="https://steamcommunity.com/id/mehfreal">steam</a>
- </div></div>                                        
-     
-                                              
         </pre>
     </div>
+
+
+    <!-- Current Music !-->
+    <div class="brandon">
+        I am currently listening to
+        <a id="tracktitle" class="anim"></a>
+        by
+        <a href="#" id="trackartist" class="anim"></a>
+        on spotify!
     </div>
-	</div>
+<br>
+    <!-- Socials !-->
+    <div class="brandon rainbow-text">
+        <a href="https://open.spotify.com/user/3htcy4th0fy2bjto9f5nepe85">spotify</a>
+    ⠀       • ⠀
+        <a href="https://discord.gg/sPgtbM8kFU">discord</a>
+            • ⠀
+        <a href="https://twitter.com/mehfxd">twitter</a>
+    ⠀       • ⠀
+        <a href="https://twitch.tv/mehfxd">twitch</a>
+    ⠀       • ⠀
+        <a href="https://steamcommunity.com/id/mehfreal">steam</a>
     </div>
+
+</div>
+                                              
+
+
+
     <video autoplay loop id="vid">
     <source src="vid.mp4" type="video/mp4" playsinline>
     </video>
@@ -85,5 +96,7 @@ setTimeout(clock, 1000)
 		<script src="lastfmnowplaying.js"></script>													     
         <script type="text/javascript" src="portfolio.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-   </html>
+</body>
+ <!-- code remodeled by Joey585 !-->
+ </html>
     
