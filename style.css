@@ -7,7 +7,15 @@
 
 }
 
-
+#anim {
+	font-weight: bold;
+	user-select: none;
+	color: purple;
+	background: repeating-linear-gradient(120deg, lightgray 0%, gray 12.5%, black 37.5%, white 60%);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	animation: slide 5s linear infinite forwards;
+}
 
 
 :root {
