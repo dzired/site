@@ -2,7 +2,6 @@
     <head>
       <title>   </title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta property="og:title" content="Outside the sun is shining" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="seems like heaven ain't far away" />
@@ -42,6 +41,14 @@ setTimeout(clock, 1000)
 
 <body onLoad="clock()" oncontextmenu="return false;">
 
+<!-- Checks if user is in mobile, and then removes the video if the requirement is met. !-->
+<script>
+    const is_mobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
+    const videoElm = document.getElementById('vid');
+    if (is_mobile) {
+        videoElm.remove();
+    }
+</script>
 
 <div id="clickToPlay">
     <span class="center">click</span>
