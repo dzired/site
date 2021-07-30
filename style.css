@@ -7,7 +7,7 @@
 
 }
 
-#anim {
+.anim {
 
 	color: purple;
 	background: repeating-linear-gradient(120deg, lightgray 0%, gray 12.5%, black 37.5%, white 60%);
