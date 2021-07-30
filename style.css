@@ -20,7 +20,10 @@ div.brandon {
 
 }
 
+h1 {
+  font-size: 25px;
 
+}
 
 body {
 	margin: 0;
@@ -71,28 +74,18 @@ a {
 	background-color: purple;
 }
 
-video {
+#image {
 	position: fixed;
 	right: 0;
 	bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -2;
-	filter: blur(5px) brightness(20%);
+	filter: blur(6px) brightness(10%);
 	pointer-events: none;
 }
 
-#clickToPlay {
-	opacity: 0;
-	transition: 1s;
-	position: absolute;
-	color: white;
-	font-size: 64px;
-	cursor: default;
-	width: 100%;
-	height: 100%;
-	z-index: 10;
-}
+
 
 #main {
 	
@@ -260,7 +253,8 @@ video {
   }
 }
 .rainbow-text {
-  animation: rainbow-text 4s infinite;
+  animation: rainbow-text 8s infinite;
+
 }
 
 
