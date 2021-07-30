@@ -26,7 +26,7 @@ var getSetLastFM = function() {
     success: function(resp) {
       var recentTrack = resp.recenttracks.track[0];
       var formatted =
-        "<img src='" + recentTrack.name;
+        "<img src='https://i.imgur.com/EgWjJry.png'>" + recentTrack.name;
       $("a#tracktitle")
         .html(formatted)
         .attr("href", recentTrack.url)
@@ -34,7 +34,7 @@ var getSetLastFM = function() {
         .attr("target", "_blank");
 
       var artistFormatted =
- +
+        "<img src='https://i.imgur.com/fae5XZA.png'>" +
         recentTrack.artist["#text"];
       $("a#trackartist")
         .html(artistFormatted)
@@ -43,7 +43,7 @@ var getSetLastFM = function() {
     },
     error: function(resp) {
       $("a#tracktitle").html(
- + "Silence!"
+        "<img src='https://i.imgur.com/EgWjJry.png'>" + "Silence!"
       );
       $("img#trackart").attr("src", "https://i.imgur.com/Q6cCswP.jpg");
       var artistFormatted =
