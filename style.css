@@ -8,8 +8,7 @@
 }
 
 #anim {
-	font-weight: bold;
-	user-select: none;
+
 	color: purple;
 	background: repeating-linear-gradient(120deg, lightgray 0%, gray 12.5%, black 37.5%, white 60%);
 	-webkit-text-fill-color: transparent;
@@ -17,6 +16,15 @@
 	animation: slide 5s linear infinite forwards;
 }
 
+
+@keyframes slide {
+	0% {
+		background-position-x: 0%;
+	}
+	100% {
+		background-position-x: 60vw;
+	}
+}
 
 :root {
     --color: red;
@@ -277,14 +285,6 @@ video {
 
 
 
-@keyframes slide {
-	0% {
-		background-position-x: 0%;
-	}
-	100% {
-		background-position-x: 60vw;
-	}
-}
 
 #widgetContainer {
 	opacity: 0;
