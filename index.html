@@ -48,20 +48,6 @@ setTimeout(clock, 1000)
         videoElm.remove();
     }
 </script>
-<script type="text/javascript">
-                function get_spotify() {
-                    $.ajax({
-                        type: 'POST',
-                        url: './last-fm-now-playing.php',
-                        data: { request: 'true' },
-                        success: function(reply) {
-                            $('.now-playing').html("<p>" + reply + "</p>");
-                        }
-                    });
-                }
-                window.onload = get_spotify;
-            </script>
-
 
 <div class="center">
 <center>
@@ -76,7 +62,6 @@ setTimeout(clock, 1000)
  | | | | | |  __/ | | | |  
  |_| |_| |_|\___|_| |_|_|  
  
-<div class="now-playing"></div> 
 </pre>                                                                                                                                    
 </div>                                                                                                                                                                             </pre>
     </div>
