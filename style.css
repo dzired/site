@@ -40,7 +40,16 @@ a {
 	color: white;
 	text-decoration: none;
 	padding: 0;
+
 }
+  
+  
+a2 {
+ position: relative;
+top: 25px;
+} 
+  
+
 
 .center {
 	position: absolute;
