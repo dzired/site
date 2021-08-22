@@ -11,7 +11,7 @@
 // last.fm API documentation for the method we're using:
 // http://www.last.fm/api/show/user.getRecentTracks
 
-$(function(){
+var getSetLastFM = function() {
   // Create a new API Key here: http://www.last.fm/api/account/create
   var api_key = '9d93c9ed1ec5d370bed6a768664de7c5';
   // Your last.fm username. We'll use this to fetch your tracks and link to your profile.
@@ -36,3 +36,4 @@ $(function(){
     $('#now_playing').html('<a href="http://last.fm/user/' + username + '">'+ listening_text + currentTrack + '</a>');
   });
 });
+setInterval(getSetLastFM, 10 * 1000);
