@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'antipasto_prolight';
-    src: url('antipasto.light-webfont.woff2') format('woff2'),
-         url('antipasto.light-webfont.woff') format('woff');
+    font-family: 'Brandon Light';
+    src: url('font-webfont.woff2') format('woff2'),
+         url('font-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,13 +11,6 @@
 :root {
     --color: red;
 }
-
-div.brandon2 { 
-	letter-spacing: 5px;
-	text-decoration: none;
-	padding: 0;
-	font-family: "antipasto_prolight";
-
 
 
 div.brandon { 
