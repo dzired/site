@@ -83,6 +83,7 @@ top: 25px;
 	background-color: purple;
 }
 
+
 img {
 	position: fixed;
 	right: 0;
@@ -90,9 +91,10 @@ img {
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -2;
-	filter: blur(8px) brightness(20%);
+	filter: blur(5px) brightness(30%);
 	pointer-events: none;
 }
+
 
 
 
