@@ -90,7 +90,7 @@ img {
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -2;
-	filter: blur(2px) brightness(50%);
+	filter: blur(8px) brightness(20%);
 	pointer-events: none;
 }
 
