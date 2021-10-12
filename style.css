@@ -12,6 +12,16 @@
     --color: red;
 }
 
+.content-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  height: 1080;
+  width: 1920;
+}
 
 div.brandon { 
 	text-decoration: none;
@@ -21,7 +31,9 @@ div.brandon {
 }
 
 h1 {
-  font-size: 25px;
+	display: inline-block;
+	margin: -40;
+    font-size: 25px;
 
 }
 
@@ -36,11 +48,11 @@ body {
 }
 
 a {
-	
+	display: inline-block;
 	color: white;
 	text-decoration: none;
 	padding: 0;
-
+	margin-top: 20;
 }
   
   
@@ -91,7 +103,7 @@ img {
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -2;
-	filter: blur(4px) brightness(60%);
+	filter: blur(4px) brightness(20%);
 	pointer-events: none;
 }
 
