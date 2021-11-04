@@ -21,6 +21,7 @@
   min-height: 100vh;
   height: 1080;
   width: 1920;
+  transform: scale(1.1)
 }
 
 div.brandon { 
@@ -33,7 +34,7 @@ div.brandon {
 h1 {
 	display: inline-block;
 	margin: -40;
-    font-size: 25px;
+    font-size: 200px;
 
 }
 
@@ -49,11 +50,19 @@ body {
 
 a {
 	display: inline-block;
+	text-decoration: none;
+	padding: 0;
+	margin-top: 20;
+}
+
+b {
+	display: inline-block;
 	color: white;
 	text-decoration: none;
 	padding: 0;
 	margin-top: 20;
 }
+  
   
   
 a2 {
