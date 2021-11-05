@@ -18,7 +18,7 @@ var gamer = function(){
   // Your last.fm username. We'll use this to fetch your tracks and link to your profile.
   var username = 'mehf';
   // This is the URL of the API we're calling.
-  var base_url = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+username+'&api_key='+api_key+'&limit=1&format=json';
+  var base_url = 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+username+'&api_key='+api_key+'&limit=1&format=json';
   $.getJSON(base_url, function(data){
     // Check to see if we're getting an Array or Object.
     // If we're listening to something right now, the API returns the song we're currently listening to as well as the last song we listened to, which would be an Array.
