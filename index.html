@@ -23,23 +23,21 @@
 <script type="text/javascript">
 function clock() {
 var date = new Date()
-
-var month = date.getMonth()
-
+var ampm = hour >= 12 ? 'am' : 'pm';
 var hour = date.getHours()
 var minute = date.getMinutes()
 var second = date.getSeconds()
 if (hour > 12) {hour = hour - 12}
 if (minute < 10) {minute = "0" + minute}
 if (second < 10) {second = "0" + second}
-document.title = hour + ":" + minute + ":" + second
+document.title = "Time is - " + hour + ":" + minute + ":" + second + " " + ampm
 setTimeout(clock, 1000)
 }
 </script>
 </head>
     
 
-<body onLoad="clock()" oncontextmenu="return false;">
+<body onLoad="clock()">
 
 <!-- Checks if user is in mobile, and then removes the video if the requirement is met. !-->
 
