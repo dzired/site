@@ -39,7 +39,7 @@ var gamer = function(){
           var listening_text = 'Last listened to ';
     }
     var currentTrack = nowPlaying['name'] + ' by ' + nowPlaying['artist']['#text'];
-    $('#now_playing').html('<a href="http://last.fm/user/' + username + '">'+ listening_text + currentTrack + '</a>');
+    $('#now_playing').html('<a href= '+ nowPlaying.url +'>'+ listening_text + currentTrack + '</a>');
 
   });
 };
