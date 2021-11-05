@@ -42,13 +42,6 @@ setTimeout(clock, 1000)
 <body onLoad="clock()" oncontextmenu="return false;">
 
 <!-- Checks if user is in mobile, and then removes the video if the requirement is met. !-->
-<script>
-    const is_mobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
-    const videoElm = document.getElementById('vid');
-    if (is_mobile) {
-        videoElm.remove();
-    }
-</script>
 
 <div class="center content-main">
 
