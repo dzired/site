@@ -22,7 +22,7 @@ var getSetLastFM = function() {
     success: function(resp) {
       var recentTrack = resp.recenttracks.track[0];
       var formatted = recentTrack.name;
-      $("a#tracktitle")
+      $("c#tracktitle")
         .html(formatted)
         .attr("href", recentTrack.url)
         .attr("title", recentTrack.name + " by " + recentTrack.artist["#text"])
@@ -30,7 +30,7 @@ var getSetLastFM = function() {
 
       var artistFormatted =
         recentTrack.artist["#text"];
-      $("a#trackartist")
+      $("c#trackartist")
         .html(artistFormatted)
         .attr("title", "Artist : " + recentTrack.artist["#text"]);
       $("img#trackart").attr("src", recentTrack.image[2]["#text"]);
