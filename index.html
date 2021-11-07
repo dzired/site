@@ -21,15 +21,9 @@
 <script type="text/javascript">
 
 function title() {
-  var i=0;
-setInterval(function(){
-    var titles=['Me', 'Merr', 'Merry', 'Ch', 'Chri', 'Christ', 'Christmas', 'Merry Christmas', 'Merry Christmas', ' '];//add more titles if you want
-    if(i===titles.length) {
-        i=0;
-    }
-    document.title = titles[i];
-    i++;
-}, 2000);
+ var dt = new Date();
+    var h =  dt.getHours(), m = dt.getMinutes(), s =dt.getSeconds();
+    var _time = (h > 12) ? (h-12 + ':' + m + ':' + s +' PM') : (h + ':' + m + ':' + s +' AM');
 }
 </script>
 </head>
