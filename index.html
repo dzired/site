@@ -19,17 +19,16 @@
     <link rel="stylesheet" href="style.css">
 
 <script type="text/javascript">
-function clock() {
-var date = new Date()
-var ampm = hour >= 12 ? 'am' : 'pm';
-var hour = date.getHours()
-var minute = date.getMinutes()
-var second = date.getSeconds()
-if (hour > 12) {hour = hour - 12}
-if (minute < 10) {minute = "0" + minute}
-if (second < 10) {second = "0" + second}
-document.title = "Time is - " + hour + ":" + minute + ":" + second + " " + ampm
-setTimeout(clock, 1000)
+
+function formatAMPM(date) {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  document.title = hours + ':' + minutes + ' ' + ampm;
+setTimeout(formatAMPM, 1000)
 }
 </script>
 </head>
