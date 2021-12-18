@@ -44,6 +44,13 @@ h1 {
 
 }
 
+h2 {
+	display: inline-block;
+    font-size: 80px;
+    margin: -15;
+
+}
+
 body {
 	margin: 0;
 	padding: 0;
