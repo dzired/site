@@ -46,9 +46,9 @@ h1 {
 
 
 .topright {
-  position: relative;
-  top: 5px;
-  right: 10px;
+  position: absolute;
+  top: 3px;
+  right: 8px;
 
 }
 
