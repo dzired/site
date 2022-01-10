@@ -108,10 +108,9 @@ img {
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -2;
-	filter: blur(4px) brightness(60%);
+	filter: blur(8px) brightness(25%);
 	pointer-events: none;
 }
-
 
 
 
