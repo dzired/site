@@ -24,7 +24,7 @@ function updateVisitCount() {
 }
 
 function sameVisitCount() {
-  fetch('https://api.countapi.xyz/update/runs-on-tech/views/?amount=0')
+  fetch('https://api.countapi.xyz/update/runs-on-tech/views/?amount=2')
   .then(res => res.json())
   .then(res => {
     countEl.innerHTML = res.value;
