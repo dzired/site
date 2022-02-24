@@ -7,6 +7,10 @@
     font-display: swap;
 }
 
+tests {
+	width:18px;
+	display: inline-block;
+}
 
 
 html {
@@ -25,9 +29,6 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
-  height: 1080;
-  width: 1920;
   transform: scale(1.1)
 }
 
@@ -41,7 +42,7 @@ div.brandon {
 h1 {
 	display: inline-block;
     font-size: 120px;
-    margin: -15;
+    margin: -25;
 
 }
 
@@ -71,6 +72,8 @@ body {
 }
 
 a {
+	width:550px;
+    word-wrap: break-word;
 	display: inline-block;
 	color: white;
 	text-decoration: none;
@@ -109,7 +112,7 @@ img {
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -2;
-	filter: blur(8px) brightness(25%);
+	filter: blur(9px) brightness(35%);
 	pointer-events: none;
 }
 
