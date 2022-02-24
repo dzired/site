@@ -1,6 +1,18 @@
 const countEl= document.getElementById('count');
 
-updateVisitCount()
+$(window).load(function () {
+            $(function () {
+                if (!sessionStorage.getItem("runOnce")) {
+
+                    updateVisitCount()
+
+                    sessionStorage.setItem("runOnce", true);
+                }
+            });
+        });
+
+
+
 function updateVisitCount() {
   fetch('https://api.countapi.xyz/update/runs-on-tech/views/?amount=1')
   .then(res => res.json())
