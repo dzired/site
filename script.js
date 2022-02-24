@@ -7,6 +7,8 @@ $(window).load(function () {
                     updateVisitCount()
 
                     sessionStorage.setItem("runOnce", true);
+                } else {
+                            sameVisitCount()
                 }
             });
         });
@@ -21,6 +23,13 @@ function updateVisitCount() {
   });
 }
 
+function sameVisitCount() {
+  fetch('https://api.countapi.xyz/update/runs-on-tech/views/?amount=0')
+  .then(res => res.json())
+  .then(res => {
+    countEl.innerHTML = res.value;
+  });
+}
 
 const music = ["audio.mp3", "audio2.mp3", "audio3.mp3", "audio4.mp3"]
 var audio = new Audio(music[Math.floor(Math.random() * music.length)]);
