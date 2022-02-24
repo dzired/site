@@ -9,8 +9,9 @@
 
 
 
-
-
+html {
+  cursor: url('cursor.png'), default;
+}
 
 
 
