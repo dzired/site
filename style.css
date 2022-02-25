@@ -72,13 +72,13 @@ body {
 }
 
 a {
-	width:550px;
+	width: 100vw;
     word-wrap: break-word;
 	display: inline-block;
 	color: white;
 	text-decoration: none;
 	padding: 0;
-	margin-top: 5;
+	margin-top: 4;
 	font-size: 18;
 }
 
@@ -106,17 +106,28 @@ a2 {
 
 
 img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	position: fixed;
-	right: 0;
-	bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
+	width: auto;
+	height: auto;
+	margin: auto;
+	top: 50%;
+	left: 50%;
 	z-index: -2;
-	filter: blur(9px) brightness(35%);
+	filter: blur(8px) brightness(35%);
 	pointer-events: none;
+
 }
-
-
 
 #main {
 	
