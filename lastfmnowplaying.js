@@ -16,7 +16,7 @@ var gamer = function(){
        var imgsrc = cover
     } else{
         var listening_text = 'Not listening to anything on Spotify'
-        var imgsrc = "https://i.pinimg.com/originals/f1/f9/fe/f1f9fe2328d1f3b2ff978d4fc67b1a20.gif"
+        var imgsrc = "https://i.pinimg.com/originals/79/2d/01/792d01df5154f95d6a5e480a3a627892.gif"
       }
 
     $('#now_playing').html('<a>'+ listening_text + '</a>');
