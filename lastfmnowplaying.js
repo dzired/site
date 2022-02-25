@@ -21,7 +21,7 @@ var gamer = function(){
 
     $('#now_playing').html('<a>'+ listening_text + '</a>');
 	$('#album_cover').html('<div id="image"><img src='+imgsrc+'></div>');
-	$('#activity').html('<div class = "brandon"><a>Currently playing: ' + data.data.activities[1].name + '</a></div>')
+	
 
 
   })
