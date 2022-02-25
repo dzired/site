@@ -124,7 +124,7 @@ img {
 	top: 50%;
 	left: 50%;
 	z-index: -2;
-	filter: blur(8px) brightness(35%);
+	filter: blur(8px) brightness(30%);
 	pointer-events: none;
 
 }
