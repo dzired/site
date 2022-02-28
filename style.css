@@ -65,7 +65,6 @@ body {
 }
 
 a {
-	width: auto;
     word-wrap: break-word;
 	display: inline-block;
 	color: white;
