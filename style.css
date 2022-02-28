@@ -64,63 +64,9 @@ body {
 	user-select: none;
 }
 
-@media screen and ( max-width: 1024px) {
+@media screen and ( max-width: 860px) {
 	a {
 		width: 400px
-	}
-	
-	.hero {
-		    display: none;
-	}
-	.layers {
-    display: none;
-}
-
-.layers::before,
-.layers::after {
-    display: none;
-.layers::before {
-    display: none;
-}
-
-.layers::after {
-    display: none;
-	
-}
-.glitch span {
-display: none;
-}
-
-.glitch::before {
-    display: none;
-}
-.glitch::after {
-    display: none;
-}
-	.opacity {
-		    display: none;
-
-	}
-	.font {
-    display: none;
-	}
-	.single-path {
-		    display: none;
-
-	}
-	.paths {
-		    display: none;
-
-	}
-	.movement {
-		    display: none;
-
-	}
-	.glitch {
-		    display: none;
-	}
-	@keyframes paths {
-		    display: none;
 	}
 }
 
@@ -845,6 +791,5 @@ section {
     position: relative;
     text-align: center;
 }
-
 
 
