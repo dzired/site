@@ -335,7 +335,7 @@ will-change: filter;
     line-height: 1;
     display: inline-block;
     color: #fff;
-    z-index: 2;
+    z-index: 3;
     letter-spacing: 10px;
 
 -webkit-appearance: none;
