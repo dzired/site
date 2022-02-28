@@ -35,7 +35,7 @@ div.brandon {
 h1 {
 	display: inline-block;
     font-size: 120px;
-    margin: -25;
+    margin: -10;
 
 }
 
@@ -82,7 +82,8 @@ a {
   
 a2 {
  position: relative;
- 
+ font-size: 25vw;
+   
 
 } 
   
