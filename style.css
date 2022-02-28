@@ -76,7 +76,7 @@ body {
 	padding: 0;
 	background-color: black;
 	overflow: hidden;
-	font-family: "monospace";
+	font-family: "Courier",monospace;
 	color: white;
 	user-select: none;
 }
