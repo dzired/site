@@ -12,7 +12,7 @@ if (isMobile === false) {
 $('#logo').html('<div class="center"> <div class="hero-container"> <h2 class="hero glitch layers" data-text="メフ"><span>メフ</span></h2> </div> <!-- Socials !--> <!-- Current Music !--> <a> <a id="now_playing" class="anim"></a> </a> </div> <br> </div> </div> </div>');
 
 } else {
-$('#logo').html('<div class="center"> <div class="hero-container"> <h2 class="hero glitch layers" data-text="メフ"><span>メフ</span></h2> </div> <!-- Socials !--> <!-- Current Music !--> <a> <a id="now_playing" class="anim"></a> </a> </div> <br> </div> </div> </div>');
+$('#logo').html('<div class="center"> <div class="glitchh" data-text="メフ">メフ</div>  <!-- Socials !--> <!-- Current Music !--> <a> <a id="now_playing" class="anim"></a> </a> </div> <br> </div> </div> </div>');
 }
 
 // $('#logo').html('<div class="center"> <div class="glitch" data-text="メフ">メフ</div>   <!-- Socials !--> <!-- Current Music !--> <a> <a id="now_playing" class="anim"></a> </a> </div> <br> </div> </div> </div>')
