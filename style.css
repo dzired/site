@@ -423,10 +423,11 @@ section {
 }
 
 .paths {
-    animation: paths 5s step-end infinite;
+    -webkit-animation: paths 5s step-end infinite;
+            animation: paths 5s step-end infinite;
 }
 
-@keyframes paths {
+@-webkit-keyframes paths {
     0% {
         -webkit-clip-path: polygon(
                 0% 43%,
@@ -681,10 +682,11 @@ section {
 .movement {
     /* Normally this position would be absolute & on the layers, set to relative here so we can see it on the div */
     position: relative;
-    animation: movement 8s step-end infinite;
+    -webkit-animation: movement 8s step-end infinite;
+            animation: movement 8s step-end infinite;
 }
 
-@keyframes movement {
+@-webkit-keyframes movement {
     0% {
         top: 0px;
         left: -20px;
@@ -712,10 +714,11 @@ section {
 }
 
 .opacity {
-    animation: opacity 5s step-end infinite;
+    -webkit-animation: opacity 5s step-end infinite;
+            animation: opacity 5s step-end infinite;
 }
 
-@keyframes opacity {
+@-webkit-keyframes opacity {
     0% {
         opacity: 0.1;
     }
@@ -751,10 +754,11 @@ section {
 }
 
 .font {
-    animation: font 7s step-end infinite;
+    -webkit-animation: font 7s step-end infinite;
+            animation: font 7s step-end infinite;
 }
 
-@keyframes font {
+@-webkit-keyframes font {
     0% {
         font-weight: 100;
         color: #e0287d;
@@ -787,16 +791,21 @@ section {
 }
 
 .glitch span {
-    animation: paths 5s step-end infinite;
+    -webkit-animation: paths 5s step-end infinite;
+            animation: paths 5s step-end infinite;
 }
 
 .glitch::before {
-    animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+    -webkit-animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+    font 8s step-end infinite, movement 10s step-end infinite;
+            animation: paths 5s step-end infinite, opacity 5s step-end infinite,
     font 8s step-end infinite, movement 10s step-end infinite;
 }
 
 .glitch::after {
-    animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+    -webkit-animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+    font 7s step-end infinite, movement 8s step-end infinite;
+            animation: paths 5s step-end infinite, opacity 5s step-end infinite,
     font 7s step-end infinite, movement 8s step-end infinite;
 }
 
@@ -804,4 +813,3 @@ section {
     position: relative;
     text-align: center;
 }
-
