@@ -23,6 +23,13 @@ html {
     --color: red;
 }
 
+@media screen and ( max-width: 860px) {
+	a {
+		width: 100vw
+            
+	}
+ 
+}
 
 
 div.brandon { 
@@ -35,6 +42,14 @@ div.brandon {
 h1 {
 	display: inline-block;
     font-size: 25vw;
+
+}
+
+
+h3 {
+	display: inline-block;
+    font-size: 20vw;
+    margin: -24;
 
 }
 
@@ -53,6 +68,8 @@ h2 {
 
 }
 
+
+
 body {
 	margin: 0;
 	padding: 0;
@@ -63,16 +80,7 @@ body {
 	user-select: none;
 }
 
-@media screen and ( max-width: 860px) {
-	a {
-		width: 100vw
-	}
-    h1, 
-    h2 {
-        margin: 200;
-	    
-    }
-}
+
 
 a {
     word-wrap: break-all;
