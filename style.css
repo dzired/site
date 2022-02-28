@@ -47,9 +47,9 @@ h1 {
 
 
 h3 {
-	display: inline-block;
-    font-size: 20vw;
-    margin: -24;
+
+    font-size: 75px;
+    margin: 0;
 
 }
 
@@ -71,11 +71,12 @@ h2 {
 
 
 body {
+    letter-spacing: 0;
 	margin: 0;
 	padding: 0;
 	background-color: black;
 	overflow: hidden;
-	font-family: "Brandon Light";
+	font-family: "monospace";
 	color: white;
 	user-select: none;
 }
@@ -88,8 +89,7 @@ a {
 	color: white;
 	text-decoration: none;
 	padding: 0;
-	margin-top: 4;
-	font-size: 16;
+	font-size: 14;
 }
 
 
@@ -310,37 +310,15 @@ img {
 }
 
 
-body {
-    color: #ccc;
-    background: #111;
-    font-family: sans-serif;
-}
 
-h1,
-h2 {
-    margin: 0;
-}
 
-a {
-    color: #ccc;
-}
+
+
+
 
 section {
     padding: 20px;
 }
 
-.hero {
-will-change: filter;
-    font-size: clamp(10vw, 10vw, 100px);
-    line-height: 1;
-    display: inline-block;
-    color: #fff;
-    z-index: 6;
-    letter-spacing: 10px;
 
--webkit-appearance: none;
-   -webkit-filter: drop-shadow(0 1px 3px);
-
-
-}
 
