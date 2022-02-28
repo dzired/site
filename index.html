@@ -16,7 +16,10 @@
 <link type="application/json+oembed" href="https://mehf.club/embed.json" />
     <link rel="shortcut icon" type="image/png" href="other/output-onlinepngtools.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="ac07b7f0ca4afd503f432a03-text/javascript"></script>
-	
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />	
 
     <link rel="stylesheet" href="style.css">
 
@@ -42,7 +45,8 @@
 
 <!-- Checks if user is in mobile, and then removes the video if the requirement is met. !-->
 
-<div class="center"> <h3>メフ</h3> 
+<div class="center"> 
+    <div id= "output"></div>
     <a> <a id="now_playing" class="anim"></a>  
         
        </div> 
@@ -118,7 +122,13 @@
 
 <div id="image"><img src='https://i.pinimg.com/originals/f8/49/2b/f8492b4ce371009e9f7b545d97a75609.gif'></div>
                    
-
+<script>
+    const yes = ["fadeInUp animate__delay-1s'", "fadeIn animate__delay-1s'", "jackInTheBox animate__delay-1s'", "zoomIn animate__delay-1s'", "jello animate__delay-1s'", "wobble animate__delay-1s'", "swing animate__delay-1s'", "pulse animate__delay-1s'", "backInDown animate__delay-1s'", "bounceInDown animate__delay-1s'"]
+var x = yes[Math.floor(Math.random() * yes.length)]
+document.getElementById('output').innerHTML = '<h3 class = "animate__animated animate__'+ x +'>メフ</h3>'
+    var y = document.getElementById('output').innerHTML = "<h3 class = 'animate__animated animate__"+ x +">メフ</h3>"
+console.log(y)
+     </script>
 
 
 
