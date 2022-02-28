@@ -68,6 +68,9 @@ body {
 	a {
 		width: 400px
 	}
+	    1%,7%,33%,47%,78%,93% {
+        clip-path: none;
+    }
 }
 
 a {
@@ -328,6 +331,8 @@ section {
 
     /* Bright things in dark environments usually cast that light, giving off a glow */
     filter: drop-shadow(0 1px 3px);
+	-webkit-appearance: none;
+
 }
 
 
