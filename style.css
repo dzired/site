@@ -34,8 +34,7 @@ div.brandon {
 
 h1 {
 	display: inline-block;
-    font-size: 120px;
-    margin: -10;
+    font-size: 25vw;
 
 }
 
@@ -64,15 +63,25 @@ body {
 	user-select: none;
 }
 
+@media screen and ( max-width: 860px) {
+	a {
+		width: 100vw
+	}
+    h1, 
+    h2 {
+        margin: 200;
+	    
+    }
+}
+
 a {
-	width: auto;
-    word-wrap: break-word;
+    word-wrap: break-all;
 	display: inline-block;
 	color: white;
 	text-decoration: none;
 	padding: 0;
 	margin-top: 4;
-	font-size: 18;
+	font-size: 16;
 }
 
 
@@ -82,8 +91,7 @@ a {
   
 a2 {
  position: relative;
- font-size: 10x;
-   
+ font-size: 7vw;
 
 } 
   
@@ -323,6 +331,8 @@ section {
 
     /* Bright things in dark environments usually cast that light, giving off a glow */
     filter: drop-shadow(0 1px 3px);
+	-webkit-appearance: none;
+
 }
 
 
@@ -786,6 +796,4 @@ section {
     position: relative;
     text-align: center;
 }
-
-
 
