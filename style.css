@@ -64,8 +64,15 @@ body {
 	user-select: none;
 }
 
+@media screen and ( max-width: 480px) {
+	a {
+		width: 400px
+	}
+}
+
 a {
-    word-wrap: break-word;
+	width: auto
+    word-wrap: break-all;
 	display: inline-block;
 	color: white;
 	text-decoration: none;
@@ -782,7 +789,6 @@ section {
 
 .hero-container {
     position: relative;
-    padding: 15px 0;
     text-align: center;
 }
 
