@@ -330,6 +330,7 @@ section {
 }
 
 .hero {
+will-change: filter;
     font-size: clamp(10vw, 10vw, 100px);
     line-height: 1;
     display: inline-block;
