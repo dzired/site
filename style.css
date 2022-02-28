@@ -1,11 +1,14 @@
 @font-face {
-    font-family: 'Caviar Dreams';
-    src: url('other/CaviarDreams.woff2') format('woff2'),
-        url('other/CaviarDreams.woff') format('woff');
+    font-family: 'Droid Sans Mono';
+    src: url('other/DroidSansMono.woff2') format('woff2'),
+        url('other/DroidSansMono.woff') format('woff'),
+        url('other/DroidSansMono.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+
 
 tests {
 	width:18px;
