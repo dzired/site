@@ -51,6 +51,8 @@ h3 {
     font-size: 80px;
     margin: -24;
 
+-webkit-text-stroke: 1px white;
+
 }
 
 
@@ -338,8 +340,8 @@ section {
     letter-spacing: 10px;
 
     /* Bright things in dark environments usually cast that light, giving off a glow */
-    filter: drop-shadow(0 1px 3px);
-	-webkit-appearance: none;
+    -webkit-filter: drop-shadow(0 1px 3px);
+
 
 }
 
