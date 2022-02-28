@@ -7,6 +7,25 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Futurist Fixed-width';
+    src: url('FuturistFixedWidthRegular.woff2') format('woff2'),
+        url('FuturistFixedWidthRegular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ElroNet Monospace';
+    src: url('ElroNet-Monospace.woff2') format('woff2'),
+        url('ElroNet-Monospace.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 
 
