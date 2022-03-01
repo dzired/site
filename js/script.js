@@ -1,6 +1,6 @@
 const countEl= document.getElementById('count');
 
-let x = 0
+
 
 function setCookie(c_name,value,exdays){var exdate=new Date();exdate.setDate(exdate.getDate() + exdays);var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());document.cookie=c_name + "=" + c_value;}
 
@@ -16,7 +16,7 @@ function checkSession(){
      countEl.innerHTML = getCookie(Count) + 1
    }
    setCookie("Hasvisited", "yes", 365); // expire in 1 year; or use null to never expire
-   setCookie("Count", x, 365); // expire in 1 year; or use null to never expire
+   setCookie("Count", 0, 365); // expire in 1 year; or use null to never expire
 }
 
 
