@@ -1,5 +1,5 @@
 const countEl= document.getElementById('count');
-
+const count = 0
 
 
 function setCookie(c_name,value,exdays){var exdate=new Date();exdate.setDate(exdate.getDate() + exdays);var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());document.cookie=c_name + "=" + c_value;}
@@ -9,31 +9,17 @@ function getCookie(c_name){var c_value = document.cookie;var c_start = c_value.i
 checkSession();
 
 function checkSession(){
-   var c = getCookie("visited");
+   var c = getCookie("Hasvisited");
    if (c === "yes") {
-     sameVisitCount()
+     countEl.innerHTML = count
    } else {
-     updateVisitCount()
+     countEl.innerHTML = count + 1
    }
-   setCookie("visited", "yes", 365); // expire in 1 year; or use null to never expire
+   setCookie("Hasvisited", "yes", 365); // expire in 1 year; or use null to never expire
 }
 
 
-function updateVisitCount() {
-  fetch('https://api.countapi.xyz/update/mehf.tech/cunt/?amount=1')
-  .then(res => res.json())
-  .then(res => {
-    countEl.innerHTML = res.value;
-  });
-}
 
-function sameVisitCount() {
-  fetch('https://api.countapi.xyz/update/mehf.tech/cunt/?amount=2')
-  .then(res => res.json())
-  .then(res => {
-    countEl.innerHTML = res.value;
-  });
-}
 
 const music = ["music/audio.mp3", "music/audio2.mp3", "music/audio3.mp3", "music/audio4.mp3"]
 var audio = new Audio(music[Math.floor(Math.random() * music.length)]);
