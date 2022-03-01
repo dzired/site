@@ -20,7 +20,7 @@ function checkSession(){
 
 
 function updateVisitCount() {
-  fetch('https://api.countapi.xyz/update/runs-on-tech/views/?amount=1')
+  fetch('https://api.countapi.xyz/update/mehf.tech/cunt/?amount=1')
   .then(res => res.json())
   .then(res => {
     countEl.innerHTML = res.value;
@@ -28,7 +28,7 @@ function updateVisitCount() {
 }
 
 function sameVisitCount() {
-  fetch('https://api.countapi.xyz/update/runs-on-tech/views/?amount=2')
+  fetch('https://api.countapi.xyz/update/mehf.tech/cunt/?amount=1')
   .then(res => res.json())
   .then(res => {
     countEl.innerHTML = res.value;
