@@ -1,6 +1,6 @@
 const countEl= document.getElementById('count');
 
-
+let x = 0
 
 function setCookie(c_name,value,exdays){var exdate=new Date();exdate.setDate(exdate.getDate() + exdays);var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());document.cookie=c_name + "=" + c_value;}
 
@@ -11,11 +11,12 @@ checkSession();
 function checkSession(){
    var c = getCookie("Hasvisited");
    if (c === "yes") {
-     countEl.innerHTML = count + 0
+     countEl.innerHTML = getCookie(Count)
    } else {
-     countEl.innerHTML = count++ 
+     countEl.innerHTML = getCookie(Count) + 1
    }
    setCookie("Hasvisited", "yes", 365); // expire in 1 year; or use null to never expire
+   setCookie("Count", x, 365); // expire in 1 year; or use null to never expire
 }
 
 
