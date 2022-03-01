@@ -9,18 +9,31 @@ function getCookie(c_name){var c_value = document.cookie;var c_start = c_value.i
 checkSession();
 
 function checkSession(){
-   var c = getCookie("Hasvisited");
+   var c = getCookie("visited");
    if (c === "yes") {
-     countEl.innerHTML = getCookie(Count)
+     sameVisitCount()
    } else {
-     countEl.innerHTML = getCookie(Count) + 1
+     updateVisitCount()
    }
-   setCookie("Hasvisited", "yes", 365); // expire in 1 year; or use null to never expire
-   setCookie("Count", 0, 365); // expire in 1 year; or use null to never expire
+   setCookie("visited", "yes", 365); // expire in 1 year; or use null to never expire
 }
 
 
+function updateVisitCount() {
+  fetch('https://api.countapi.xyz/update/mehf.tech/cunt/?amount=1')
+  .then(res => res.json())
+  .then(res => {
+    countEl.innerHTML = res.value;
+  });
+}
 
+function sameVisitCount() {
+  fetch('https://api.countapi.xyz/update/mehf.tech/cunt/?amount=2')
+  .then(res => res.json())
+  .then(res => {
+    countEl.innerHTML = res.value;
+  });
+}
 
 const music = ["music/audio.mp3", "music/audio2.mp3", "music/audio3.mp3", "music/audio4.mp3"]
 var audio = new Audio(music[Math.floor(Math.random() * music.length)]);
@@ -29,5 +42,3 @@ var audio = new Audio(music[Math.floor(Math.random() * music.length)]);
 document.onclick = function() {
   audio.play();
 }
-
-
