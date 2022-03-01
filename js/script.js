@@ -11,9 +11,9 @@ checkSession();
 function checkSession(){
    var c = getCookie("Hasvisited");
    if (c === "yes") {
-     countEl.innerHTML = count
+     countEl.innerHTML = count + 0
    } else {
-     countEl.innerHTML = count++ 1
+     countEl.innerHTML = count++ 
    }
    setCookie("Hasvisited", "yes", 365); // expire in 1 year; or use null to never expire
 }
