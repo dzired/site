@@ -35,13 +35,13 @@ var gamer = function(){
       if (window.playing !== nowPlaying['name']){
           
           $('#now_playing').html('<a class = "animate__animated animate__backOutLeft"href= '+ window.link +'>'+ listening_text + window.playing + ' by ' + window.artist + '</a>');
-          var delayInMilliseconds = 1200; //1 second
+          var delayInMilliseconds = 1000; //1 second
           setTimeout(function() {
           $('#now_playing').html('<a class = "animate__animated animate__backInRight" href= '+ nowPlaying.url +'>'+ listening_text + currentTrack + '</a>');    }, delayInMilliseconds);
           yess()
       } else {
           
-          $('#now_playing').html('<a class = "animate__animated animate__fadeInUp anime__delay-2s" href= '+ nowPlaying.url +'>'+ listening_text + currentTrack + '</a>');
+          $('#now_playing').html('<a href= '+ nowPlaying.url +'>'+ listening_text + currentTrack + '</a>');
       }          
     $('#trackname').html(nowPlaying['name'])
     $('#artist').html(nowPlaying['artist']['#text'])
