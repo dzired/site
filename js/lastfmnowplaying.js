@@ -32,29 +32,14 @@ var gamer = function(){
     var currentTrack = nowPlaying['name'] + ' by ' + nowPlaying['artist']['#text'];
     
     
-      if (window.playing !== nowPlaying['name']){
-          
-          $('#now_playing').html('<a class = "animate__animated animate__backOutLeft"href= '+ window.link +'>'+ listening_text + window.playing + ' by ' + window.artist + '</a>');
-          var delayInMilliseconds = 1000; //1 second
-          setTimeout(function() {
-          $('#now_playing').html('<a class = "animate__animated animate__backInRight" href= '+ nowPlaying.url +'>'+ listening_text + currentTrack + '</a>');    }, delayInMilliseconds);
-          yess()
-      } else {
-          
+      
           $('#now_playing').html('<a href= '+ nowPlaying.url +'>'+ listening_text + currentTrack + '</a>');
-      }          
-    $('#trackname').html(nowPlaying['name'])
-    $('#artist').html(nowPlaying['artist']['#text'])
-    $('#isListening').html(listening_text) 
+    
+    
       
   })
     
   };
-
-
-
-
-yess()
 gamer();
 setInterval(gamer, 10 * 1000)
 
