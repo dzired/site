@@ -109,9 +109,16 @@ a {
 	display: inline-block;
 	color: white;
 	text-decoration: none;
-	padding: 0;
-	font-size: 14;
+	padding: 1;
+    letter-spacing: 1;
+	font-size: 13.5;
+    
 }
+
+.b {
+    font-size: 13;
+}
+
 
 
 
