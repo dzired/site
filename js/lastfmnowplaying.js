@@ -41,5 +41,5 @@ var gamer = function(){
     
   };
 gamer();
-setInterval(gamer, 10 * 1000)
+setInterval(gamer, 10 * 2000)
 
