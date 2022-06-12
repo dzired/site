@@ -2,4 +2,4 @@
 path = location.pathname; 
 
 
-window.history.pushState(null, null, "-")
+window.history.pushState(null, null, "ㅤ")
