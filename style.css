@@ -36,7 +36,7 @@ tests {
 }
 
 
-html {
+* {
   cursor: url('other/cursor.png'), default;
 }
 
